@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/EPIClogo.png">
+  <title>EPIC Campus Info</title>
 
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            EPICOrange: '#fc7e41',
+            EPICBlue: '#083e5a',
+            EPICGreen: '#18854b',
+            EPICAccent: '#fefefe',
+            EPICBG: '#1C2541',
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="EPICBG text-black-100 font-sans">
+
+<!-- EPIC Header -->
+    <header class="EPICBG shadow-md sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center p-6">
+            <h1 class="text-2xl font-bold text-accent">EPIC Campus Info</h1>
+        </div>
+    </header>
+
+<!-- EPIC Hero-->
+   <section class="max-w-5xl mx-auto px-6 mt-20 py-24 text-center bg-gray-800 rounded-xl shadow-lg">
+        <h2 class="text-5xl font-extrabold mb-6 text-accent">Welcome to EPIC Campus</h2>
+        <p class="text-lg text-gray-300 mb-8">Hello! Welcom to the EPIC Campus Info page, we are very excited to have you here.
+            <br>EPIC Campus(Explorative Pathways for Innovative Careers), is a Career and Technical Education campus in Littleton Public Schools, Colorado</p>
+  </section>
+
+
+</body>
