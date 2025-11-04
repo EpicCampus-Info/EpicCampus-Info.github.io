@@ -30,7 +30,7 @@
   </script>
 </head>
 
-<body class="bg-EPICAccent text-EPICOrange font-sans">
+<body class="bg-gray-900 text-EPICOrange font-sans">
 
 <!-- Header -->
     <header class="bg-EPICBG shadow-md sticky top-0 z-50">
@@ -44,7 +44,7 @@
         <h2 class="text-5xl font-extrabold mb-6 text-accent">Welcome to EPIC Campus</h2>
         <p class="text-lg text-gray-300 mb-8">Hello! Welcome to the EPIC Campus Kiosk, we are very excited to have you here.
             <br>EPIC Campus(Explorative Pathways for Innovative Careers), is a Career and Technical Education campus in Littleton Public Schools,
-            <br>located in Littleton, Colorado.</p>
+            located in Littleton, Colorado.</p>
   </section>
 
 <!-- Upcoming Events -->
@@ -79,12 +79,12 @@
 <!-- Epic Campus Computer Sciences-->
 <button class="relative block m-4 w-full max-w-5xl mx-auto bg-EPICBlue
                text-center text-3xl text-gray-300 font-bold px-6 py-3 
-               rounded-xl font-semibold hover:scale-105 transition-transform duration-200">
+               rounded-xl font-semibold hover:scale-105 transition-transform duration-200"
+               onclick="this.nextElementSibling.classList.toggle('hidden')"></button>>
 
   <!-- Background overlay -->
   <div class="absolute inset-0 bg-[url('assets/EPICCSLogo.png')] 
               bg-cover bg-center bg-no-repeat opacity-25 pointer-events-none rounded-xl"></div>
-          onclick="this.nextElementSibling.classList.toggle('hidden')">
           
       Computer Science Pathway
     </button>
