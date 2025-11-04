@@ -30,7 +30,7 @@
   </script>
 </head>
 
-<body class="EPICBG text-EPICOrange font-sans">
+<body class="bg-EPICAccent text-EPICOrange font-sans">
 
 <!-- Header -->
     <header class="bg-EPICBG shadow-md sticky top-0 z-50">
@@ -40,17 +40,17 @@
     </header>
 
 <!-- Welcome to EPIC -->
-   <section class="max-w-5xl mx-auto px-6 mt-15 py-24 text-center bg-gray-800 rounded-xl shadow-lg">
+   <section class="max-w-5xl mx-auto px-6 mt-16 py-24 text-center bg-gray-800 rounded-xl shadow-lg">
         <h2 class="text-5xl font-extrabold mb-6 text-accent">Welcome to EPIC Campus</h2>
         <p class="text-lg text-gray-300 mb-8">Hello! Welcome to the EPIC Campus Kiosk, we are very excited to have you here.
-            <br>EPIC Campus(Explorative Pathways for Innovative Careers), is a Career and Technical Education campus
-            <br>located in Littleton Public Schools, located in Littleton, Colorado.</p>
+            <br>EPIC Campus(Explorative Pathways for Innovative Careers), is a Career and Technical Education campus in Littleton Public Schools,
+            <br>located in Littleton, Colorado.</p>
   </section>
 
 <!-- Upcoming Events -->
    <section class="max-w-5xl mx-auto px-6 mt-10 py-12 text-center bg-gray-800 rounded-xl shadow-lg">
         <h2 class="text-5xl font-extrabold mb-6 text-accent">Upcoming EPIC Events</h2>
-        <p class="text-lg text-gray-300 mb-8">November 10th - EPIC Campus ShowCase Night
+        <p class="text-lg text-gray-300 mb-8">November 10th - EPIC Campus Showcase Night
           <br>November 14th - CS@EPIC CyberPatriot Round 2</p>
   </section>
 
@@ -63,7 +63,7 @@
 <!-- Epic Campus Aerospace-->
   <section class="m-10">
     <button class="block m-4 w-full max-w-5xl mx-auto bg-EPICBlue 
-                  text-center text-2xl text-gray-300 px-6 py-3 
+                  text-center text-3xl text-gray-300 font-bold px-6 py-3 
                   rounded-xl font-semibold 
                   hover:scale-105 transition-transform duration-200"
           onclick="this.nextElementSibling.classList.toggle('hidden')">
@@ -72,31 +72,38 @@
   
     <div class="m-2 p-4 w-full max-w-5xl mx-auto 
                 rounded-xl bg-EPICOrange text-center 
-                text-gray-300 hidden">
+                text-gray-500 hidden">
       EPIC Campus - Aerospace Pathway<br>
     </div>
 
 <!-- Epic Campus Computer Sciences-->
-    <button class="block m-4 w-full max-w-5xl mx-auto bg-EPICOrange 
-                  text-center text-2xl text-gray-300 px-6 py-3 rounded-xl font-semibold 
+    <button class="block m-4 w-full max-w-5xl mx-auto bg-EPICBlue 
+                  text-center text-3xl text-gray-300 font-bold px-6 py-3 
+                  rounded-xl font-semibold 
                   hover:scale-105 transition-transform duration-200"
           onclick="this.nextElementSibling.classList.toggle('hidden')">
+          
+          <!--Background Image Overlay-->
+          <div class="absolute inset-0 bg-[url('assets/yaylogo.png')] bg-cover bg-center bg-no-repeat opacity-25 pointer-events-none"></div>
       Computer Science Pathway
     </button>
   
     <div class="m-2 p-4 w-full max-w-5xl mx-auto rounded-xl
-               bg-EPICBlue text-center text-gray-300 hidden">
+               bg-EPICOrange text-center text-gray-500 hidden">
       EPIC Campus - Computer Science Pathway<br>
     </div>
   </section>
+
 <footer class="bg-EPICBlue text-2xl text-gray-300 py-8">
   <div class="max-w-5xl mx-auto px-6 text-center">
-    <p class="mb-4" EPIC Campus></p>
+    <p class="mb-4"EPIC Campus></p>
     <div class="flex justify-center space-x-6 mb-4">
-      <a href="#" class="hover:text-white">Contact</a>
-      <a href="#" class="hover:text-white">Privacy</a>
+      <a href="#" class="hover:text-white">EPIC Campus</a>
+      <a href="#" class="hover:text-white">Contact Our Counselors</a>
+      <a href="#" class="hover:text-white">More Information</a>
     </div>
   </div>
 </footer>
+
 </body>
 </html>
