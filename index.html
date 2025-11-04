@@ -72,36 +72,44 @@
   
     <div class="m-2 p-4 w-full max-w-5xl mx-auto 
                 rounded-xl bg-EPICOrange text-center 
-                text-gray-500 hidden">
+                text-gray-300 hidden">
       EPIC Campus - Aerospace Pathway<br>
     </div>
 
 <!-- Epic Campus Computer Sciences-->
-<button class="relative block m-4 w-full max-w-5xl mx-auto bg-EPICBlue
-               text-center text-3xl text-gray-300 font-bold px-6 py-3 
-               rounded-xl font-semibold hover:scale-105 transition-transform duration-200"
-               onclick="this.nextElementSibling.classList.toggle('hidden')"></button>>
+<section class="max-w-5xl mx-auto px-6 mt-10 space-y-4">
 
-  <!-- Background overlay -->
-  <div class="absolute inset-0 bg-[url('assets/EPICCSLogo.png')] 
-              bg-cover bg-center bg-no-repeat opacity-25 pointer-events-none rounded-xl"></div>
-          
-      Computer Science Pathway
-    </button>
-  
-    <div class="m-2 p-4 w-full max-w-5xl mx-auto rounded-xl
-               bg-EPICOrange text-center text-gray-500 hidden">
-      EPIC Campus - Computer Science Pathway<br>
-    </div>
-  </section>
+  <!-- Button -->
+  <button class="relative block m-4 w-full max-w-5xl mx-auto bg-EPICBlue
+                 text-3xl text-gray-300 font-bold px-6 py-3 
+                 rounded-xl font-semibold hover:scale-105 transition-transform duration-200"
+          onclick="this.nextElementSibling.classList.toggle('hidden')">
+
+    <!-- Background overlay -->
+    <div class="absolute inset-0 bg-[url('assets/yayLogo.png')] 
+                bg-cover bg-center bg-no-repeat opacity-25 pointer-events-none rounded-xl"></div>
+
+    <!-- Button text -->
+    <span class="relative">CS</span>
+  </button>
+
+  <!-- Hidden dropdown content -->
+  <div class="m-2 p-4 w-full max-w-5xl mx-auto rounded-xl
+             bg-EPICOrange text-center text-gray-300 hidden">
+    EPIC Campus Computer Science
+  </div>
+
+</section>
+
+
 
 <footer class="bg-EPICBG shadow-md text-2xl font-bold text-accent py-8">
   <div class="max-w-5xl mx-auto px-6 text-center">
     <p class="mb-4"EPIC Campus></p>
     <div class="flex justify-center space-x-6 mb-4">
-      <a href="#" class="hover:text-white">EPIC Campus</a>
-      <a href="#" class="hover:text-white">Contact Our Counselors</a>
-      <a href="#" class="hover:text-white">More Information</a>
+      <a href="#" class="hover:text-gray-300">EPIC Campus</a>
+      <a href="#" class="hover:text-gray-300">Contact Our Counselors</a>
+      <a href="#" class="hover:text-gray-300">More Information</a>
     </div>
   </div>
 </footer>
