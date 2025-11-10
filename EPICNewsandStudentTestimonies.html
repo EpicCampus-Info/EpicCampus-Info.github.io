@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/EPIClogo.png">
+  <title>EPIC Campus Information</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            EPICOrange: '#fc7e41',
+            EPICBlue: '#083e5a',
+            EPICGreen: '#18854b',
+            EPICAccent: '#fefefe',
+            EPICBG: '#1C2541',
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-900 font-sans">
+<main class="flex-grow">
+<!-- Header -->
+<header class="bg-EPICBG shadow-md sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto flex justify-between items-center p-6">
+    <h1 class="text-2xl font-bold text-EPICOrange">EPIC Campus Info</h1>
+  </div>
+</header>
+
+<!-- EPIC Campus News and Student Testimonies -->
+<section class="relative max-w-5xl mx-auto pt-12 text-center">
+<h1 class="text-6xl font-extrabold text-center text-EPICOrange">
+  EPIC Campus News and Student Testimonies
+</h1>
+<h2 class="text-4xl font-bold text-center text-EPICAccent p-6">
+  Page Under Work
+</h2>
+</section>
+
+<section
+  onclick="window.location.href='index.html'"
+  class="max-w-5xl mx-auto px-6 m-10 py-12 text-center bg-gray-800 rounded-xl shadow-lg cursor-pointer hover:bg-gray-700 transition"
+>
+  <h2 class="text-5xl font-extrabold mb-6 text-EPICOrange">Return to Homepage</h2>
+  <p class="text-lg text-gray-300">Click Here to Return to the EPIC Campus Kiosk Homepage</p>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-EPICBG shadow-md text-EPICAccent py-8 mt-16">
+  <div class="max-w-5xl mx-auto px-6 text-center space-y-4">
+    <p class="text-lg font-semibold">EPIC Campus</p>
+    <div class="flex justify-center space-x-6">
+      <a href="#" class="hover:text-gray-300">Contact Us</a>
+      <a href="#" class="hover:text-gray-300">More Information</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
