@@ -34,48 +34,46 @@
 
 <!-- Header -->
 <header class="bg-EPICBG shadow-md sticky top-0 z-50">
-  <div class="max-w-5xl mx-auto flex justify-between items-center p-6">
+  <div class="max-w-5xl mx-auto px-6 sm:px-8 md:px-12 flex justify-between items-center p-6">
     <h1 class="text-2xl font-bold text-EPICOrange">EPIC Campus Info</h1>
   </div>
 </header>
 
 <!-- Welcome to EPIC -->
-<section class="relative max-w-5xl mx-auto py-16 text-center">
-<h2 class="text-8xl font-extrabold text-center text-EPICAccent">
-  Welcome to<br><span id="epicText">EPIC</span> Campus
-</h2>
+<section class="max-w-5xl mx-auto px-6 sm:px-8 md:px-12 py-16 text-center">
+  <h2 class="text-6xl md:text-8xl font-extrabold text-EPICAccent">
+    Welcome to<br><span id="epicText">EPIC</span> Campus
+  </h2>
 
-<script>
-  const epic = document.getElementById("epicText");
-  const colors = ["text-EPICOrange", "text-EPICBlue", "text-EPICGreen"];
-  let i = 0;
+  <script>
+    const epic = document.getElementById("epicText");
+    const colors = ["text-EPICOrange", "text-EPICBlue", "text-EPICGreen"];
+    let i = 0;
 
-  setInterval(() => {
-    // Remove all previous color classes
-    colors.forEach(c => epic.classList.remove(c));
-    // Add the next color
-    epic.classList.add(colors[i]);
-    i = (i + 1) % colors.length;
-  }, 1000); // change every 1 second
-</script>
+    setInterval(() => {
+      colors.forEach(c => epic.classList.remove(c));
+      epic.classList.add(colors[i]);
+      i = (i + 1) % colors.length;
+    }, 1000);
+  </script>
 </section>
 
-<section class="relative max-w-5xl mx-auto px-6 py-24 text-center bg-gray-800 rounded-xl shadow-lg">
-  <!-- Background overlay -->
+<!-- EPIC Introduction -->
+<section class="max-w-5xl mx-auto px-6 sm:px-8 md:px-12 py-24 text-center bg-gray-800 rounded-xl shadow-lg relative">
   <div class="absolute inset-0 bg-[url('assets/EPICCampusLogo.png')] bg-[length:65%_auto] bg-center bg-no-repeat opacity-25 pointer-events-none rounded-xl"></div>
   <p class="relative z-10 text-4xl font-bold text-gray-300">
-    Hello! Welcome to the EPIC Campus Kiosk,
-    <br>we are very excited to have you here.<br>
+    Hello! Welcome to the EPIC Campus Kiosk,<br>
+    we are very excited to have you here.
   </p>
   <p class="relative z-10 text-3xl text-gray-300 py-12">
-    EPIC Campus (Explorative Pathways for Innovative Careers)
-    <br>is a Career and Technical Education campus
-    <br>in Littleton Public Schools, located in Littleton, Colorado.
+    EPIC Campus (Explorative Pathways for Innovative Careers)<br>
+    is a Career and Technical Education campus<br>
+    in Littleton Public Schools, located in Littleton, Colorado.
   </p>
 </section>
 
 <!-- Upcoming Events -->
-<section class="max-w-5xl mx-auto px-6 m-12 py-24 text-center bg-gray-800 rounded-xl shadow-lg">
+<section class="max-w-5xl mx-auto px-6 sm:px-8 md:px-12 m-12 py-24 text-center bg-gray-800 rounded-xl shadow-lg">
   <h2 class="text-5xl font-extrabold mb-6 text-EPICOrange">Upcoming EPIC Events</h2>
   <p class="text-lg text-gray-300">
     November 10th - EPIC Campus Showcase Night<br>
@@ -86,7 +84,7 @@
 <!-- EPIC Pathways Intro -->
 <section
   onclick="window.location.href='pathways.html'"
-  class="max-w-5xl mx-auto px-6 m-10 py-12 text-center bg-gray-800 rounded-xl shadow-lg cursor-pointer hover:bg-gray-700 transition"
+  class="max-w-5xl mx-auto px-6 sm:px-8 md:px-12 m-10 py-12 text-center bg-gray-800 rounded-xl shadow-lg cursor-pointer hover:bg-gray-700 transition"
 >
   <h2 class="text-5xl font-extrabold mb-6 text-EPICOrange">EPIC Campus Pathways</h2>
   <p class="text-lg text-gray-300">Click Here to View the Seven Pathways of EPIC Campus</p>
@@ -95,16 +93,15 @@
 <!-- EPIC Pathways Student Perspectives -->
 <section
   onclick="window.location.href='EPICNewsandStudentTestimonies.html'"
-  class="max-w-5xl mx-auto px-6 m-10 py-12 text-center bg-gray-800 rounded-xl shadow-lg cursor-pointer hover:bg-gray-700 transition"
+  class="max-w-5xl mx-auto px-6 sm:px-8 md:px-12 m-10 py-12 text-center bg-gray-800 rounded-xl shadow-lg cursor-pointer hover:bg-gray-700 transition"
 >
   <h2 class="text-5xl font-extrabold mb-6 text-EPICOrange leading-tight">EPIC Campus News<br>and Student Testimonies</h2>
   <p class="text-lg text-gray-300">Click Here to See the Latest News at EPIC<br>and Some Student Voices about their Experiences at EPIC</p>
 </section>
 
-
 <!-- Footer -->
 <footer class="bg-EPICBG shadow-md text-EPICAccent py-8 mt-16">
-  <div class="max-w-5xl mx-auto px-6 text-center space-y-4">
+  <div class="max-w-5xl mx-auto px-6 sm:px-8 md:px-12 text-center space-y-4">
     <p class="text-lg font-semibold">EPIC Campus</p>
     <div class="flex justify-center space-x-6">
       <a href="#" class="hover:text-gray-300">Contact Us</a>
